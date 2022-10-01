@@ -407,19 +407,18 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
   display: block;
   background: none;
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .skills .progress .skill {
   padding: 0;
   margin: 0 0 6px 0;
-  text-transform: uppercase;
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -433,15 +432,18 @@ section {
 
 .skills .progress-bar-wrap {
   background: #dce8f8;
-  height: 10px;
+  height: 5px;
+  border-radius: 5px;
 }
 
 .skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
+  width: 0px;
+  height: 5px;
+  transition: 3s;
+  border-radius: 5px;
   background-color: #149ddd;
 }
+
 
 /*--------------------------------------------------------------
 # Resume
@@ -465,7 +467,6 @@ section {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #050d18;
   margin-bottom: 10px;
