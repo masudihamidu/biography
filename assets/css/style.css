@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: white;
-  background: linear-gradient(0.25turn, #f0c27b, #2c5364);
+  background: linear-gradient(0.25turn, #2c5364, #f0c27b);
 }
 
 a {
