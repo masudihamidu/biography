@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
-  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  color: white;
+  background: linear-gradient(0.25turn, #f0c27b, #4b1248);
 }
 
 a {
@@ -33,7 +33,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #3f87a6;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -193,7 +193,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #3f87a6;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -290,7 +290,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: linear-gradient(0.25turn, #3f87a6, #f69d3c);
 }
 
 .section-title {
