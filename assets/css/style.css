@@ -371,7 +371,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #2c5364;
   float: left;
   line-height: 0;
 }
@@ -381,7 +381,7 @@ section {
   line-height: 40px;
   display: block;
   font-weight: 700;
-  color: #050d18;
+  color: white;
   margin-left: 60px;
 }
 
@@ -390,7 +390,7 @@ section {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: white;
 }
 
 .facts .count-box a {
@@ -423,7 +423,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: white;
 }
 
 .skills .progress .skill .val {
@@ -442,7 +442,7 @@ section {
   height: 5px;
   transition: 3s;
   border-radius: 5px;
-  background-color: #149ddd;
+  background-color: #2c5364;
 }
 
 
@@ -460,7 +460,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid white;
   position: relative;
 }
 
@@ -475,7 +475,6 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #212730;
   border-radius: 10px;
   padding: 5px 15px;
   display: inline-block;
@@ -504,7 +503,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid white;
 }
 
 /*--------------------------------------------------------------
