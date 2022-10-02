@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: white;
-  background: linear-gradient(0.25turn, #f0c27b, #4b1248);
+  background: linear-gradient(0.25turn, #f0c27b, #2c5364);
 }
 
 a {
@@ -290,7 +290,7 @@ section {
 }
 
 .section-bg {
-  background: linear-gradient(0.25turn, #3f87a6, #f69d3c);
+  background: linear-gradient(0.25turn, #2c5364, #f0c27b);
 }
 
 .section-title {
@@ -303,7 +303,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: white;
 }
 
 .section-title h2::after {
@@ -312,7 +312,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: gray;
   bottom: 0;
   left: 0;
 }
@@ -327,7 +327,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: white;
 }
 
 .about .content ul {
@@ -348,7 +348,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: white;
   line-height: 0;
 }
 
@@ -475,7 +475,8 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #212730;
+  border-radius: 10px;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -686,10 +687,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #2c5364;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #2c5364;
 }
 
 .services .icon i {
@@ -886,14 +887,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #2c5364;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #2c5364;
   color: #fff;
 }
 
@@ -982,7 +983,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: #2c5364;
   border: 0;
   padding: 10px 24px;
   color: #fff;
