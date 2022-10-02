@@ -371,7 +371,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #2c5364;
+  color:  #f0c27b;
   float: left;
   line-height: 0;
 }
@@ -686,10 +686,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #2c5364;
+  background:  #f0c27b;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #2c5364;
+  border: 1px solid  #f0c27b;
 }
 
 .services .icon i {
