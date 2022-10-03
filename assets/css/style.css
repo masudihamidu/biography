@@ -506,6 +506,16 @@ section {
   border: 2px solid white;
 }
 
+.downloadCV{
+    background: white;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
