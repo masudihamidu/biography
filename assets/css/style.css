@@ -24,6 +24,7 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/* loader */
 .loader {
   position: fixed;
   left: 0;
@@ -49,7 +50,8 @@ h6 {
   border: 15px solid #dddddd;
   border-top-color: #7449f5;
   border-radius: 50%;
-  animation: loading 0.75s ease infinite;
+  animation: loading 0.75s linear infinite;
+  -webkit-animation: loading 2s linear infinite;
 }
 
 @keyframes loading{
@@ -61,7 +63,7 @@ h6 {
   }
 }
 
-
+/* ----- end loader----- */
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
