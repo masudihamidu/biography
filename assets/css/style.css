@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: white;
-  font-weight: 450;
+  font-weight: 500;
   background: linear-gradient(0.25turn, #2c5364, #f0c27b);
 }
 
@@ -494,7 +494,6 @@ section {
   border-radius: 5px;
   background-color: #123949;
 }
-
 
 /*--------------------------------------------------------------
 # Resume
