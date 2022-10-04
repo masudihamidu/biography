@@ -13,17 +13,15 @@
     }
   }
 
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+    loader.classList.add(loader-hidden);
+    
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild("loader")
+    })
+  })
 
-  var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
 
   /**
    * Easy event listener function
