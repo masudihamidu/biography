@@ -449,7 +449,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color:  #f0c27b;
+  color:  white;
   float: left;
   line-height: 0;
 }
@@ -459,7 +459,7 @@ section {
   line-height: 40px;
   display: block;
   font-weight: 700;
-  color: white;
+  color: black;
   margin-left: 60px;
 }
 
