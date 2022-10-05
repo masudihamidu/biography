@@ -13,14 +13,14 @@
     }
   }
 
-  window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
-    loader.classList.add(loader-hidden);
-    
-    loader.addEventListener("transitionend", () => {
-      document.body.removeChild("loader")
-    })
-  })
+  var spinner = function () {
+    setTimeout(function () {
+        if ($('#spinner').length > 0) {
+            $('#spinner').removeClass('show');
+        }
+    }, 1);
+};
+spinner();
 
 
   /**
