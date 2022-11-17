@@ -270,13 +270,13 @@ h6 {
 #hero {
   width: 100%;
   height: 90vh;
-  background: url("../img/backg.jpg") top center;
+  background: url("../img/masudi_bg.jpg") top center;
   background-size: cover;
 }
 
 #hero:before {
   content: "";
-  background: rgba(2, 8, 15, 0.5);
+  background: rgba(2, 8, 15, 0.7);
   height: 90vh;
   position: absolute;
   bottom: 0;
