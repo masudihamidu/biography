@@ -551,11 +551,11 @@ section {
   position: absolute;
   width: 16px;
   height: 16px;
-  border-radius: 50px;
+  border-radius: 50px ;
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid white;
+  border: 1px  solid white;
 }
 
 .downloadCV{
