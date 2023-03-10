@@ -551,7 +551,7 @@ section {
   position: absolute;
   width: 16px;
   height: 16px;
-  border-radius: 50px;
+  border-radius: 50px square;
   left: -9px;
   top: 0;
   background: #fff;
