@@ -474,7 +474,7 @@
               <h3 class="card-title">Send a message</h3>
               <p class="muted">Fill the form and I’ll get back to you.</p>
 
-              <form class="contact-form mt-3" action="https://formsubmit.co/masudihmfaume@gmail.com" method="POST">
+              <form id="contactForm" class="contact-form mt-3" action="https://formsubmit.co/masudihmfaume@gmail.com" method="POST">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="New portfolio contact">
                 <div class="mb-3">
@@ -485,8 +485,14 @@
                   <label class="form-label" for="contactMessage">Message</label>
                   <textarea class="form-control" id="contactMessage" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Send message</button>
+                <button type="submit" class="btn btn-primary w-100" id="contactSubmit">
+                  <span class="btn-text">Send message</span>
+                  <span class="btn-spinner d-none" aria-hidden="true">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...
+                  </span>
+                </button>
               </form>
+              <div id="contactToast" class="contact-toast d-none" role="alert"></div>
 
               <div class="hero-links mt-4">
                 <a class="social-pill" href="https://twitter.com/MasoudHamidu1"><i class="bx bxl-twitter"></i><span>Twitter</span></a>
@@ -576,6 +582,43 @@
     });
   </script>
 
+
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    const contactSubmit = document.getElementById('contactSubmit');
+    const contactToast = document.getElementById('contactToast');
+    const btnText = contactSubmit.querySelector('.btn-text');
+    const btnSpinner = contactSubmit.querySelector('.btn-spinner');
+
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      contactSubmit.disabled = true;
+      btnText.classList.add('d-none');
+      btnSpinner.classList.remove('d-none');
+
+      fetch('https://formsubmit.co/masudihmfaume@gmail.com', {
+        method: 'POST',
+        body: new FormData(contactForm),
+        mode: 'no-cors'
+      })
+        .then(() => {
+          contactForm.reset();
+          contactToast.className = 'contact-toast';
+          contactToast.innerHTML = '<i class="bi bi-check-circle-fill"></i> Your message has been sent successfully!';
+          setTimeout(() => contactToast.classList.add('d-none'), 5000);
+        })
+        .catch(() => {
+          contactToast.className = 'contact-toast error';
+          contactToast.innerHTML = '<i class="bi bi-exclamation-circle-fill"></i> Something went wrong. Please try again.';
+        })
+        .finally(() => {
+          contactSubmit.disabled = false;
+          btnText.classList.remove('d-none');
+          btnSpinner.classList.add('d-none');
+        });
+    });
+  </script>
 
 </body>
 </html>

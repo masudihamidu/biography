@@ -774,3 +774,26 @@ body::before{
   margin-bottom: 6px;
   display: inline-block;
 }
+.contact-form .btn .spinner-border{
+  width: 1rem;
+  height: 1rem;
+  border-width: .15em;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.contact-toast{
+  margin-top: 16px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: #10b981;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--shadow);
+}
+.contact-toast i{ font-size: 18px; }
+.contact-toast.error{ background: #ef4444; }
+.contact-toast.d-none{ display: none; }
