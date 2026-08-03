@@ -57,6 +57,7 @@
           <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
           <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
           <li><a class="nav-link scrollto" href="#certifications">Certifications</a></li>
+          <li><a class="nav-link scrollto" href="#training">Training</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -419,9 +420,40 @@
                 <div class="cert"><span class="cert-name">Python</span><span class="cert-meta">Sololearn</span><a class="btn btn-sm btn-outline-light cert-view" data-cert="assets/certificates/PYTHON.pdf" href="#">View</a></div>
                 <div class="cert"><span class="cert-name">CSS</span><span class="cert-meta">Sololearn</span><a class="btn btn-sm btn-outline-light cert-view" data-cert="assets/certificates/css.pdf" href="#">View</a></div>
               </div>
-              <div class="mt-4">
-                <div class="pill">Training: WHO Metadata Packages • HISP Tanzania (Oct 2022)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training -->
+    <section id="training" class="section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Training</h2>
+          <p>Professional training and workshops.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="50">
+            <div class="glass-card">
+              <div class="project-card-header">
+                <div class="project-icon"><i class="bi bi-mortarboard"></i></div>
+                <div>
+                  <h3 class="project-title">WHO Metadata Packages</h3>
+                  <p class="project-meta">HISP Tanzania • Oct 2022 • Dar es Salaam, Tanzania</p>
+                </div>
               </div>
+              <p class="mt-2">
+                WHO (World Health Organization) metadata packages. The training was conducted at the
+                HISP Tanzania Office, Dar es Salaam, Tanzania, as part of a collaborative initiative
+                between HISP Tanzania and HISP Uganda.
+              </p>
+              <p class="fw-bold mt-3 mb-1">Key Skills / Competencies Gained:</p>
+              <ul class="bullets small">
+                <li>Importing metadata file in DHIS2 platform.</li>
+                <li>Data quality, and data input validation.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -440,13 +472,27 @@
           <div class="col-lg-7">
             <div class="glass-card h-100">
               <h3 class="card-title">Send a message</h3>
-              <p class="muted">Fastest options: email or WhatsApp.</p>
+              <p class="muted">Fill the form and I’ll get back to you.</p>
 
-              <div class="d-flex flex-wrap gap-3">
-                <a class="btn btn-primary" href="mailto:masudihmfaume@gmail.com?subject=Portfolio%20contact">Email me</a>
-                <a class="btn btn-outline-light" href="https://api.whatsapp.com/send?phone=255656255809">WhatsApp</a>
-                <a class="btn btn-outline-light" href="tel:+255656255809">Call</a>
-              </div>
+              <form id="contactForm" class="contact-form mt-3" action="https://formsubmit.co/masudihmfaume@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New portfolio contact">
+                <div class="mb-3">
+                  <label class="form-label" for="contactEmail">Your email</label>
+                  <input type="email" class="form-control" id="contactEmail" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="contactMessage">Message</label>
+                  <textarea class="form-control" id="contactMessage" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100" id="contactSubmit">
+                  <span class="btn-text">Send message</span>
+                  <span class="btn-spinner d-none" aria-hidden="true">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...
+                  </span>
+                </button>
+              </form>
+              <div id="contactToast" class="contact-toast d-none" role="alert"></div>
 
               <div class="hero-links mt-4">
                 <a class="social-pill" href="https://twitter.com/MasoudHamidu1"><i class="bx bxl-twitter"></i><span>Twitter</span></a>
@@ -535,5 +581,44 @@
       if (e.key === 'Escape' && certModal.classList.contains('active')) closeCert();
     });
   </script>
+
+
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    const contactSubmit = document.getElementById('contactSubmit');
+    const contactToast = document.getElementById('contactToast');
+    const btnText = contactSubmit.querySelector('.btn-text');
+    const btnSpinner = contactSubmit.querySelector('.btn-spinner');
+
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      contactSubmit.disabled = true;
+      btnText.classList.add('d-none');
+      btnSpinner.classList.remove('d-none');
+
+      fetch('https://formsubmit.co/masudihmfaume@gmail.com', {
+        method: 'POST',
+        body: new FormData(contactForm),
+        mode: 'no-cors'
+      })
+        .then(() => {
+          contactForm.reset();
+          contactToast.className = 'contact-toast';
+          contactToast.innerHTML = '<i class="bi bi-check-circle-fill"></i> Your message has been sent successfully!';
+          setTimeout(() => contactToast.classList.add('d-none'), 5000);
+        })
+        .catch(() => {
+          contactToast.className = 'contact-toast error';
+          contactToast.innerHTML = '<i class="bi bi-exclamation-circle-fill"></i> Something went wrong. Please try again.';
+        })
+        .finally(() => {
+          contactSubmit.disabled = false;
+          btnText.classList.remove('d-none');
+          btnSpinner.classList.add('d-none');
+        });
+    });
+  </script>
+
 </body>
 </html>
