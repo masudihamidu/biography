@@ -560,8 +560,9 @@ a:hover{ color: inherit; }
   .hero-card-grid{ grid-template-columns: 1fr; }
   .nav-menu ul{ width: 100%; }
   .section-title h2{ font-size: clamp(26px, 8vw, 34px); }
-  .cert{ flex-direction: column; align-items: flex-start; gap: 4px; }
-  .cert-name{ text-align:left; }
+  .cert{ flex-direction: column; align-items: flex-start; gap: 8px; padding: 12px 14px; }
+  .cert-name{ text-align:left; font-size: 14px; line-height: 1.35; }
+  .cert-view{ display: block; width: 100%; text-align: center; padding: 6px 10px; }
   .site-footer .container{ justify-content:center; text-align:center; }
   .tag{ font-size: 12px; padding: 6px 10px; }
   .map-wrap iframe{ height: 220px; }
