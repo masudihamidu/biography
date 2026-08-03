@@ -511,7 +511,7 @@
     const certFrame = document.getElementById('certFrame');
 
     function openCert(el) {
-      certFrame.src = el.dataset.cert;
+      certFrame.src = el.dataset.cert + '#toolbar=0&navpanes=0';
       certModal.classList.add('active');
     }
 
