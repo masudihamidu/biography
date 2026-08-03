@@ -1,469 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <meta property="og:title" content="Website: Masudi Hamidu Biography">
   <meta property="og:description" content="Visit to view and download resume of Masudi Hamidu">
   <meta property="og:image" content="assets/img/images.jpeg">
+  <meta name="description" content="Masudi H. Mfaume — System & Software Developer. Full‑stack web & mobile development, REST APIs, Flutter, Django, Laravel, and quality assurance.">
+
   <title>Masudi Hamidu</title>
 
   <!-- Favicons -->
   <link href="assets/img/images.jpeg" rel="icon">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Main CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  
-  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- Mobile nav toggle button -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none" aria-label="Open menu" role="button" tabindex="0"></i>
 
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- Top navigation -->
+  <header class="topbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="brand d-flex align-items-center gap-2 scrollto" href="#hero" aria-label="Go to top">
+        <span class="brand-mark">MH</span>
+        <span class="brand-name">Masudi H. Mfaume</span>
+      </a>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="assets/img/masudi.jpg" alt="" class="img-fluid rounded-circle" loading="eager">
-        <h1 class="text-light"><a href="index.html">Masudi Hamidu</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/MasoudHamidu1" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://api.whatsapp.com/send?phone=255656255809" class="twitter"><i class="bx bxl-whatsapp"></i></a>
-          <a href="https://github.com/masudihamidu" class="google-plus"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/masudi-h-mfaume-4213761b2" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://slack.com/dhis2-dev-community/masudihmfaume" class="linkedin"><i class="bx bxl-slack"></i></a>
-        </div>
+      <div class="topbar-actions d-flex align-items-center gap-2">
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-toggle-icons" aria-hidden="true">
+            <i class="bi bi-sun-fill icon-sun"></i>
+            <i class="bi bi-moon-stars-fill icon-moon"></i>
+          </span>
+          <span class="theme-toggle-label">Theme</span>
+        </button>
       </div>
 
-      <nav id="navbar" class="nav-menu navbar">
+      <nav id="navbar" class="nav-menu" aria-label="Primary">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bi-person-fill"></i> <span>About me</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-lightning"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bi-journal-text"></i> <span>Resume</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bi-briefcase"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact address</span></a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#experience">Experience</a></li>
+          <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
+          <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
+          <li><a class="nav-link scrollto" href="#certifications">Certifications</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <!-- .nav-menu -->
     </div>
   </header>
-  <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div style="padding-top: 15%;" class="hero-container">
-      <h1>I'm Masudi Hamidu</h1>
-      <p><span class="typed" data-typed-items="System Developer, Mobile developer, System analyst"></span></p>
-      <div style="padding-top: 21%">
-        <a href="#about" class="nav-link scrollto"><i style="font-size: 50px;" class="bx bx-right-arrow-circle bx-fade-right"></i></a>
-       </div> 
-    </div> 
+  <!-- Hero -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <p class="hero-kicker">System &amp; Software Developer</p>
+          <h1 class="hero-title">Building reliable web &amp; mobile products.</h1>
+          <p class="hero-subtitle">
+            I’m <strong>Masudi H. Mfaume</strong> — full‑stack development, REST APIs, Flutter, Django, Laravel,
+            and quality assurance (SIT/UAT) with a security‑aware mindset.
+          </p>
+          <p class="hero-typed">
+            <span class="typed" data-typed-items="Full‑Stack Developer, Mobile Developer (Flutter), Project Manager, QA & System Tester"></span>
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-primary btn-lg" href="assets/CV/MASUDI H MFAUME CV.pdf" download>
+              <i class="bi bi-download me-2"></i>Download CV
+            </a>
+            <a class="btn btn-outline-light btn-lg scrollto" href="#projects">
+              <i class="bi bi-grid-3x3-gap me-2"></i>View Projects
+            </a>
+            <a class="btn btn-link btn-link-light scrollto" href="#contact">Let’s work together →</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="150">
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <img class="hero-avatar" src="assets/img/masudi.jpg" alt="Portrait of Masudi H. Mfaume" loading="eager">
+              <div>
+                <h2 class="hero-card-name mb-1">Masudi H. Mfaume</h2>
+                <p class="hero-card-meta mb-0">Dar es Salaam, Tanzania</p>
+              </div>
+            </div>
+
+            <div class="hero-card-grid mt-4">
+              <div class="mini-stat">
+                <div class="mini-stat-label">Experience</div>
+                <div class="mini-stat-value">2+ yrs</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-label">Focus</div>
+                <div class="mini-stat-value">Full‑stack</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-label">Delivery</div>
+                <div class="mini-stat-value">Agile</div>
+              </div>
+            </div>
+
+            <div class="hero-links mt-4">
+              <a class="social-pill" href="mailto:masudihmfaume@gmail.com"><i class="bi bi-envelope"></i><span>Email</span></a>
+              <a class="social-pill" href="https://github.com/masudihamidu"><i class="bx bxl-github"></i><span>GitHub</span></a>
+              <a class="social-pill" href="https://www.linkedin.com/in/masudi-h-mfaume-4213761b2"><i class="bx bxl-linkedin"></i><span>LinkedIn</span></a>
+              <a class="social-pill" href="https://api.whatsapp.com/send?phone=255656255809"><i class="bx bxl-whatsapp"></i><span>WhatsApp</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- End Hero -->
 
   <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <!-- About -->
+    <section id="about" class="section">
       <div class="container">
-            <div class="section-title">
-          <h2>About me</h2>
+        <div class="section-title" data-aos="fade-up">
+          <h2>About</h2>
           <p>
-            Innovative and results-driven system and software developer with over 2 years of comprehensive experience in both front-end and back-end development. Demonstrated expertise in the complete software development lifecycle for dynamic web and mobile projects. Proficient in a wide range of programming languages and technologies, including Java OOP (Object-Oriented Programming), Dart, JavaScript, PHP, MySQL, HTML, and CSS.
+            Dedicated and results‑oriented developer with hands‑on full‑stack experience delivering reliable web and mobile applications.
+            I’m comfortable across backend, frontend, mobile, databases, and QA—from requirements to deployment.
           </p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Personal details <i class="bi bi-user"></i></h3>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-phone"></i> <strong>Phone:</strong> <span>+255 656 255 809</span></li>
-                  <li><i class="bi bi-building"></i> <strong>City:</strong> <span>Dar-es-salaam, Tanzania</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bx bxs-graduation"></i> <strong>Education:</strong> <span>Bachelor Degree</span></li>
-                  <li><i class="bx bx-envelope"></i> <strong>Email:</strong> <span>masudihmfaume@gmail.com</span></li>
-                </ul>
-              </div>
+        <div class="row g-4">
+          <div class="col-lg-7" data-aos="fade-up">
+            <div class="glass-card">
+              <h3 class="card-title">Professional profile</h3>
+              <p class="mb-0">
+                Strong proficiency in <strong>Java (OOP)</strong>, <strong>Dart</strong>, <strong>Python</strong>, <strong>JavaScript</strong>, <strong>PHP</strong>,
+                <strong>MySQL</strong>, HTML/CSS and Visual Basic. Experienced with <strong>Flutter</strong>, <strong>Django</strong>, <strong>Laravel</strong>,
+                <strong>RESTful APIs</strong>, <strong>Git</strong>, and <strong>TypeScript</strong> to build scalable, secure and user‑friendly systems.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="glass-card">
+              <h3 class="card-title">Quick info</h3>
+              <ul class="info-list">
+                <li><i class="bi bi-geo-alt"></i><span>Dar es Salaam, Tanzania</span></li>
+                <li><i class="bi bi-envelope"></i><a href="mailto:masudihmfaume@gmail.com">masudihmfaume@gmail.com</a></li>
+                <li><i class="bi bi-telephone"></i><a href="tel:+255656255809">+255 656 255 809</a> <span class="muted">/</span> <a href="tel:+255620711848">+255 620 711 848</a></li>
+                <li><i class="bi bi-globe2"></i><a href="https://masudihamidu.github.io/biography">masudihamidu.github.io/biography</a></li>
+                <li><i class="bx bxl-github"></i><a href="https://github.com/masudihamidu">github.com/masudihamidu</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End About Section -->
 
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
+    <!-- Experience -->
+    <section id="experience" class="section section-alt">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Facts</h2>
+        <div class="section-title" data-aos="fade-up">
+          <h2>Experience</h2>
+          <p>Roles and responsibilities based on my CV — focused on delivery, quality, and impact.</p>
         </div>
-        <div class="row no-gutters">
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="bi-bag-check"></i>
-              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects completed</strong></p>
+
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="glass-card">
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                <h3 class="card-title mb-0">Finsys Tech Solutions Limited</h3>
+                <span class="pill">Nov 2025 – Present</span>
+              </div>
+              <p class="muted mb-2">Project Manager • Full‑Stack Developer • System Tester / QA — Dar es Salaam, Tanzania</p>
+              <ul class="bullets">
+                <li>Led end‑to‑end delivery for government management information systems (scope, milestones, stakeholder communication).</li>
+                <li>Built and maintained web &amp; mobile systems (Python/Django backend, Flutter mobile app, PostgreSQL database).</li>
+                <li>Created test plans and test cases; executed SIT and UAT; collaborated with dev teams to resolve issues and improve quality.</li>
+              </ul>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-clock"></i>
-              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours of support</strong></p>
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="glass-card">
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                <h3 class="card-title mb-0">Institute of Finance Management (IFM)</h3>
+                <span class="pill">2021 – 2024</span>
+              </div>
+              <p class="muted mb-2">System Developer (Final Year Project) • System Analyst (Project Work)</p>
+              <ul class="bullets">
+                <li>Built a Maternal Health Management System for tracking records, LNMP delivery date prediction and SMS notifications.</li>
+                <li>Performed requirements analysis and designed workflows/UI for a Graduands Clearance System.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="glass-card">
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                <h3 class="card-title mb-0">HISP Tanzania</h3>
+                <span class="pill">Aug 2022 – Oct 2022</span>
+              </div>
+              <p class="muted mb-2">System Developer (Field Practical Training) — DHIS2 ecosystem</p>
+              <ul class="bullets">
+                <li>Extended program indicator disaggregation capabilities using DHIS2 variables/constants, operators and ranges.</li>
+                <li>Improved indicator dictionary and implemented compound disaggregation using multiple inputs.</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Facts Section -->
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <!-- Projects -->
+    <section id="projects" class="section">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Projects</h2>
+          <p>Selected work across web, mobile, government systems, and DHIS2.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="project-card h-100">
+              <div class="project-card-header">
+                <div class="project-icon"><i class="bi bi-heart-pulse"></i></div>
+                <div>
+                  <h3 class="project-title">Maternal Health Management System</h3>
+                  <p class="project-meta">IFM • Final year project</p>
+                </div>
+              </div>
+              <ul class="bullets small">
+                <li>Clinic card generation and record tracking</li>
+                <li>AI Q&amp;A module for mothers &amp; professionals</li>
+                <li>LNMP-based expected delivery prediction</li>
+                <li>SMS notifications after registration</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-sm btn-outline-light" href="https://github.com/masudihamidu">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="project-card h-100">
+              <div class="project-card-header">
+                <div class="project-icon"><i class="bi bi-qr-code-scan"></i></div>
+                <div>
+                  <h3 class="project-title">QR E‑Attendance (Mobile)</h3>
+                  <p class="project-meta">IFM • Mobile project</p>
+                </div>
+              </div>
+              <ul class="bullets small">
+                <li>Lecturers generate QR codes for sessions</li>
+                <li>Android &amp; iOS scanning and instant feedback</li>
+                <li>Attendance reporting for administrators</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card h-100">
+              <div class="project-card-header">
+                <div class="project-icon"><i class="bi bi-diagram-3"></i></div>
+                <div>
+                  <h3 class="project-title">Program Indicator Disaggregator</h3>
+                  <p class="project-meta">HISP Tanzania • DHIS2</p>
+                </div>
+              </div>
+              <ul class="bullets small">
+                <li>Enhanced disaggregation operators &amp; ranges</li>
+                <li>Added program indicator dictionary</li>
+                <li>Compound disaggregation across variables/constants</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-sm btn-outline-light" href="https://github.com/masudihamidu">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="project-card h-100">
+              <div class="project-card-header">
+                <div class="project-icon"><i class="bi bi-building"></i></div>
+                <div>
+                  <h3 class="project-title">MoBEF Management Information System</h3>
+                  <p class="project-meta">Finsys Tech Solutions • Zanzibar</p>
+                </div>
+              </div>
+              <ul class="bullets small">
+                <li>Government-aligned delivery with milestones &amp; reports</li>
+                <li>Cross‑functional coordination and stakeholder communication</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+            <div class="project-card h-100">
+              <div class="project-card-header">
+                <div class="project-icon"><i class="bi bi-cart3"></i></div>
+                <div>
+                  <h3 class="project-title">E‑Commerce Platform</h3>
+                  <p class="project-meta">TPC • QA &amp; testing</p>
+                </div>
+              </div>
+              <ul class="bullets small">
+                <li>Test plans and test cases from requirements</li>
+                <li>SIT/UAT validation for new features &amp; changes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card h-100">
+              <div class="project-card-header">
+                <div class="project-icon"><i class="bi bi-calculator"></i></div>
+                <div>
+                  <h3 class="project-title">Construction Cost Estimation System</h3>
+                  <p class="project-meta">NCC • QA &amp; testing</p>
+                </div>
+              </div>
+              <ul class="bullets small">
+                <li>Manual &amp; automated testing for reliability</li>
+                <li>Issue reporting and collaboration with developers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
           <h2>Skills</h2>
+          <p>Core technical skills, plus delivery and tooling.</p>
         </div>
-        <div class="row skills-content">
+
+        <div class="row g-4">
           <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">System development <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Mobile development <i class="val">88%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">RESTful API <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Git repositories <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">District health information system (DHIS2) <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Cyber security, and IoT <i class="val">83%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Car driving <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="glass-card">
+              <h3 class="card-title">Tech stack</h3>
+              <div class="tag-grid">
+                <span class="tag">Java (OOP)</span>
+                <span class="tag">Dart</span>
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Flutter</span>
+                <span class="tag">Django</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">RESTful APIs</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">Git</span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Masudi Hamidu Mfaume</h4>
-              <p>Innovative and results-driven system and software developer with over 2 years of comprehensive experience in both front-end and back-end development. Demonstrated expertise in the complete software development lifecycle for dynamic web and mobile projects. Proficient in a wide range of programming languages and technologies, including Java OOP (Object-Oriented Programming), Dart, JavaScript, PHP, MySQL, HTML, and CSS.
-              <br/>
-              Adept at using Visual Basic and modern development tools such as IDEs, Redux, RESTful APIs, Git repositories, and TypeScript. Skilled in developing robust mobile applications using the Flutter framework and creating efficient web applications with Laravel. Strong problem-solving abilities and a proven track record of delivering high-quality, scalable solutions on time. Eager to leverage my skills and passion for technology to drive innovation and achieve exceptional results in a forward-thinking organization.
-              <ul>
-                <li>Silver 04 street, Mbezi Beach, Dar-es-salaam, Tanzania</li>
-                <li>+255 656 255 809</li>
-                <li>masudihmfaume@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Computer Science - Software Engineering</h4>
-              <h5>2021 - 2024</h5>
-              <p><em>Institute of Finance Management (IFM)</em></p>
-            </div>
-
-            <div class="resume-item">
-              <h4>Ordinary Diploma in Computer Science</h4>
-              <h5>2019 - 2021</h5>
-              <p><em>Institute of Finance Management (IFM)</em></p>
-              <h5>Relevant modules</h5>
-              <ul>
-                <li>Fundamentals of website design (84%)</li>
-                <li>Object oriented programming (86%)</li>
-                <li>Event-Driven programming (74%)</li>
-                <li>Fundamentals of database management (92%)</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Basic Technician Certificate in Computing and Information Technology</h4>
-              <h5>2018 - 2019</h5>
-              <p><em>Institute of Finance Management (IFM)</em></p>
-            </div>
-            <h3 class="resume-title">Certifications</h3>
-            <div class="resume-item">
-              <h5>Programming languages</h5>
-              <ul>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>Python for beginners</li>
-                <li>SQL</li>
-              </ul>
-              <p><em>Sololearn</em></p>
-            </div>
-            <div class="resume-item">
-              <h5>DHIS2 Platform</h5>
-              <ul>
-                <li>Introduction of District Health Information System 2 (DHIS2)</li>
-                <li>Aggregate data capture and validation fundamentals</li>
-              </ul>
-              <p><em>HISP centre, University of Oslo</em></p>
-            </div>
-            <div class="resume-item">
-              <h5>Framework</h5>
-              <ul>
-                <li>React + Redux</li>
-              </ul>
-              <p><em>Sololearn</em></p>
-            </div>
-            <div class="resume-item">
-              <h5>Web development tools</h5>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-              <p><em>Sololearn</em></p>
-            </div>
-            <div class="resume-item">
-              <h5>Responsive web design course</h5>
-              <p><em>Sololearn</em></p>
-            </div>
-            <div class="resume-item">
-              <h5>Coding for marketers course</h5>
-              <p><em>Sololearn</em></p>
-            </div>
-            <div class="resume-item">
-              <h5>Game development with JavaScript</h5>
-              <p><em>Sololearn</em></p>
-            </div>
-            <div class="resume-item">
-              <h5>Introduction to cyber security</h5>
-              <p><em>SkillUp</em></p>
-            </div>
-            <h3 class="resume-title">Attend training course</h3>
-            <div class="resume-item">
-              <h5>WHO (World Health Organization) metadata packages </h5>
-              <ul>
-                <li>Importing metadata file in DHIS2 platform.</li>
-                <li>Data quality, and data input validation.</li>
-              </ul>
-              <p><em>HISP Tanzania</em></p>
-            </div>
-          </div>
+          
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-             <h3 class="resume-title">Professional Experience</h3>
-
-             <div class="resume-item">
-              <h4>System developer - Final year project</h4>
-              <h5>2023 - 2024</h5>
-              <p><em>Institute of Finance Management (IFM), Dar-es-salaam, Tanzania</em></p>
-              <p>Developed and implemented the Maternal Health Management System to improve the tracking and management of maternal health records.</p>
-              <ul>
-                <li>Generated clinic cards to track expectant mothers' clinic attendances.</li>
-                <li>Integrated a question-and-answer module, enabling mothers and health professionals to interact with AI for timely responses.</li>
-                <li>Developed a predictive model to estimate the expected delivery date using the Last Normal Menstrual Period (LNMP).</li>
-                <li>Sent SMS notifications to expectant mother post-registration, updating them on their registration status and subsequent health tests and immunizations.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Mobile developer - Project Work</h4>
-              <h5>2023 - 2024</h5>
-              <p><em>Institute of Finance Management (IFM), Dar-es-salaam, Tanzania</em></p>
-              <p>Developed an e-attendance tracking system using QR code technology to automate attendance tracking processes.</p>
-              <ul>
-                <li>Enabled lecturers to generate QR codes containing lecture details for easy student check-in.</li>
-                <li>Created a mobile application compatible with both Android and iOS platforms, allowing students to scan QR codes, confirm attendance, and receive immediate feedback. </li>
-                <li>Implemented functionality to generate detailed reports on event attendance, improving administrative efficiency and accuracy.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>System developer - Field practical training</h4>
-              <h5>2022</h5>
-              <p><em>HISP Tanzania, Dar-es-salaam,Tanzania </em></p>
-              <ul>
-                <li>Contributor of system development in program indicator disaggregator</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>System developer - Project work</h4>
-              <h5>2021</h5>
-              <p><em>Institute of Finance Management (IFM), Dar-es-salaam, Tanzania</em></p>
-              <ul>
-                <li>Identifying area for modification in existing system and subsequently developing this modifications. Writting and implementing efficient code </li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>System developer - Field practical training</h4>
-              <h5>2020</h5>
-              <p><em>Institute of Finance Management (IFM), Dar-es-salaam, Tanzania</em></p>
-              <ul>
-                <li>Designing and implementing information system management.Testing and evaluating management system. Writting and implementing efficient code </li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Web developer - Practical training</h4>
-              <h5>2020 -2021</h5>
-              <p><em>Institute of Finance Management (IFM), Dar-es-salaam, Tanzania</em></p>
-              <ul>
-                <li>Designing and developing website. Writting and implementing efficient code </li>
-              </ul>
+            <div class="glass-card">
+              <h3 class="card-title">Quality, security &amp; delivery</h3>
+              <div class="tag-grid">
+                <span class="tag">SIT / UAT</span>
+                <span class="tag">Test plans &amp; test cases</span>
+                <span class="tag">System testing</span>
+                <span class="tag">QA collaboration</span>
+                <span class="tag">Agile teamwork</span>
+                <span class="tag">Project management</span>
+                <span class="tag">Kali Linux (foundations)</span>
+                <span class="tag">Pen‑testing basics</span>
+              </div>
+              <p class="muted mt-3 mb-0">Languages: Swahili (very good), English (good).</p>
             </div>
           </div>
         </div>
-        <div class="downloadCV">
-        <a href="assets/CV/MASUDI H MFAUME CV.pdf" download>
-          <i class="bx bx-download" style="font-size: 20px; color: #2c5364;"></i> download CV 
-        </a>
-        </div>
       </div>
     </section>
-    <!-- End Resume Section -->
-    
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+
+    <!-- Certifications -->
+    <section id="certifications" class="section">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
+        <div class="section-title" data-aos="fade-up">
+          <h2>Certifications</h2>
+          <p>Selected certifications from my CV.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-code-slash"></i></div>
-            <h4 class="title"><a href="https://github.com/masudihamidu">System and application development</a></h4>
-            <p class="description">Designing, testing, and implementing system and applicaition or program</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="#">System analysis</a></h4>
-            <p class="description">Identifying system requirement, and system designing</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Services Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact address</h2>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Silver 04 street, Mbezi-beach, Dar-es-salaam, Tanzania</p>
+        <div class="row g-4">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="glass-card">
+              <div class="cert-grid">
+                <div class="cert"><span class="cert-name">Introduction to Cyber Security</span><span class="cert-meta">CISCO • 2024</span></div>
+                <div class="cert"><span class="cert-name">Digital Awareness</span><span class="cert-meta">CISCO • 2025</span></div>
+                <div class="cert"><span class="cert-name">Introduction to DHIS2</span><span class="cert-meta">HISP (U. of Oslo) • 2022</span></div>
+                <div class="cert"><span class="cert-name">Aggregate Data Capture &amp; Validation</span><span class="cert-meta">HISP (U. of Oslo) • 2022</span></div>
+                <div class="cert"><span class="cert-name">Responsive Web Design</span><span class="cert-meta">Sololearn • 2021</span></div>
+                <div class="cert"><span class="cert-name">Web Development Fundamentals</span><span class="cert-meta">Sololearn • 2022</span></div>
+                <div class="cert"><span class="cert-name">SQL Intermediate</span><span class="cert-meta">Sololearn • 2023</span></div>
+                <div class="cert"><span class="cert-name">PHP</span><span class="cert-meta">Sololearn • 2020</span></div>
+                <div class="cert"><span class="cert-name">JavaScript</span><span class="cert-meta">Sololearn • 2022</span></div>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>masudihmfaume@gmail.com</p>
+              <div class="mt-4">
+                <div class="pill">Training: WHO Metadata Packages • HISP Tanzania (Oct 2022)</div>
               </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+255 656 255 809, +255 620 711 848</p>
-              </div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1264.0688343213471!2d39.22008382923162!3d-6.712495999696701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea9d4c8f2b5e94c1!2zNsKwNDInNDUuMCJTIDM5wrAxMycxNC4zIkU!5e1!3m2!1sen!2stz!4v1664546546816!5m2!1sen!2stz" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
           </div>
         </div>
-
       </div>
     </section>
-<!-- End Contact Section -->
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Want to build something? I’m available for full‑stack development, mobile apps, and QA/testing.</p>
+        </div>
+
+        <div class="row g-4" data-aos="fade-up">
+          <div class="col-lg-7">
+            <div class="glass-card h-100">
+              <h3 class="card-title">Send a message</h3>
+              <p class="muted">Fastest options: email or WhatsApp.</p>
+
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-primary" href="mailto:masudihmfaume@gmail.com?subject=Portfolio%20contact">Email me</a>
+                <a class="btn btn-outline-light" href="https://api.whatsapp.com/send?phone=255656255809">WhatsApp</a>
+                <a class="btn btn-outline-light" href="tel:+255656255809">Call</a>
+              </div>
+
+              <div class="hero-links mt-4">
+                <a class="social-pill" href="https://twitter.com/MasoudHamidu1"><i class="bx bxl-twitter"></i><span>Twitter</span></a>
+                <a class="social-pill" href="https://slack.com/dhis2-dev-community/masudihmfaume"><i class="bx bxl-slack"></i><span>Slack</span></a>
+                <a class="social-pill" href="https://github.com/masudihamidu"><i class="bx bxl-github"></i><span>GitHub</span></a>
+                <a class="social-pill" href="https://www.linkedin.com/in/masudi-h-mfaume-4213761b2"><i class="bx bxl-linkedin"></i><span>LinkedIn</span></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="glass-card h-100">
+              <h3 class="card-title">Details</h3>
+              <ul class="info-list">
+                <li><i class="bi bi-geo-alt"></i><span>Dar es Salaam, Tanzania</span></li>
+                <li><i class="bi bi-envelope"></i><a href="mailto:masudihmfaume@gmail.com">masudihmfaume@gmail.com</a></li>
+                <li><i class="bi bi-telephone"></i><a href="tel:+255656255809">+255 656 255 809</a> <span class="muted">/</span> <a href="tel:+255620711848">+255 620 711 848</a></li>
+              </ul>
+              <div class="map-wrap mt-3">
+                <iframe title="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1264.0688343213471!2d39.22008382923162!3d-6.712495999696701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea9d4c8f2b5e94c1!2zNsKwNDInNDUuMCJTIDM5wrAxMycxNC4zIkU!5e1!3m2!1sen!2stz!4v1664546546816!5m2!1sen!2stz" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-<!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Masudi Hamidu</span></strong><i class="flag flag-tanzania"></i> 
-      </div>
+  <footer class="site-footer">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div class="muted">© <span id="year"></span> Masudi H. Mfaume</div>
+      <a class="muted scrollto" href="#hero">Back to top</a>
     </div>
   </footer>
-<!-- End  Footer --> 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/js/main.js"></script>
-  <!-- End of Vendor JS Files -->
-</body>
 
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

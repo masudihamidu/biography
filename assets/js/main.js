@@ -13,16 +13,6 @@
     }
   }
 
-  var spinner = function () {
-    setTimeout(function () {
-        if ($('#spinner').length > 0) {
-            $('#spinner').removeClass('show');
-        }
-    }, 1);
-};
-spinner();
-
-
   /**
    * Easy event listener function
    */
@@ -43,6 +33,34 @@ spinner();
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
+
+  /**
+   * Theme toggle (light/dark)
+   */
+  const getPreferredTheme = () => {
+    const saved = localStorage.getItem('theme')
+    if (saved === 'light' || saved === 'dark') return saved
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+  }
+
+  const setTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }
+
+  window.addEventListener('load', () => {
+    try {
+      setTheme(getPreferredTheme())
+    } catch (e) {
+      // localStorage can fail in some environments; still set a default
+      document.documentElement.setAttribute('data-theme', 'dark')
+    }
+  })
+
+  on('click', '#themeToggle', function() {
+    const current = document.documentElement.getAttribute('data-theme') || 'dark'
+    setTheme(current === 'dark' ? 'light' : 'dark')
+  })
 
   /**
    * Navbar links active state on scroll
@@ -68,7 +86,9 @@ spinner();
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
-    let elementPos = select(el).offsetTop
+    const topbar = select('.topbar')
+    const offset = topbar ? topbar.offsetHeight + 8 : 0
+    let elementPos = select(el).offsetTop - offset
     window.scrollTo({
       top: elementPos,
       behavior: 'smooth'
@@ -98,6 +118,13 @@ spinner();
     select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
+  })
+
+  on('keydown', '.mobile-nav-toggle', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      this.click()
+    }
   })
 
   /**
@@ -146,106 +173,6 @@ spinner();
   }
 
   /**
-   * Skills animation
-   */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
-  }
-
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
-    }
-
-  });
-
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  });
-
-  /**
    * Animation on scroll
    */
   window.addEventListener('load', () => {
@@ -256,10 +183,5 @@ spinner();
       mirror: false
     })
   });
-
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
 
 })()
